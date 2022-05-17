@@ -1,0 +1,29 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+      "baseUrl": "./",
+      "paths": {
+          "#/*": ["src/*"]
+      },
+      "lib": [
+          "dom",
+          "es2015",
+          "es2016"
+      ],
+      "experimentalDecorators": true,
+      "jsx": "react",
+      "target": "es2017",
+      "module": "es2020",
+      "moduleResolution": "node",
+      "noUnusedLocals": true,
+      "noUnusedParameters": false,
+      "removeComments": false,
+      "preserveConstEnums": true,
+      "sourceMap": true,
+      "allowJs": false,
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+  },
+  "include": ["./src/**/*"]
+}

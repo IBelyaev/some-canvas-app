@@ -1,0 +1,31 @@
+.info-modal-window {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.info-modal-window__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    min-width: 150px;
+    min-height: 100px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 30px 40px;
+}
+
+.info-modal-window__close-btn {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.info-modal-window__footer {
+    margin-top: 25px;
+}
