@@ -3,6 +3,8 @@
 Application for drawing some geometric shapes.
 You can select three points and after this the fourth with parallelogram and circle will appear. You can move parallelogram points and change its and circle size.
 
+[DEMO](https://ibelyaev.github.io/canvas/)
+
 ## Available Scripts
 
 In the project directory, you can run:
