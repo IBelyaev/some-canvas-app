@@ -11,14 +11,16 @@ const Portal = React.memo(({ id, children }: Props) => {
     const [isNewElement] = useState(!el.current.parentElement);
     
     useEffect(() => {
+        const currentEl = el.current;
+
         if (isNewElement) {
-            el.current.id = id;
-            document.body.appendChild(el.current);
+            currentEl.id = id;
+            document.body.appendChild(currentEl);
         }
 
         return () => {
-            if (isNewElement && el.current.parentElement) {
-                el.current.parentElement.removeChild(el.current);
+            if (isNewElement && currentEl.parentElement) {
+                currentEl.parentElement.removeChild(currentEl);
             }
         }
     }, [id, isNewElement]);
